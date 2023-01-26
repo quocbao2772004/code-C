@@ -4,8 +4,6 @@
 #define ll long long
 #define f(i,a,b) for(int i=a;i<=b;i++)
 #define f1(i,a,b) for(int i=a;i>=b;i--)
-#define fi freopen("d.inp","r",stdin)
-#define fo freopen("d.out","w",stdout)
 int n;
 int a[5005],b[5005];
 int test;
@@ -28,7 +26,7 @@ void lam()
           z[u]=x[i];
           u++;
           z[u]=s[i];u++;
-        //printf("%c",z[u]);
+      
        }
        if(strcmp(z,d)==0){ok=1;printf("%d\n",solan);break;}
        f(i,0,n-1)
@@ -38,8 +36,6 @@ void lam()
        {
            x[j]=z[i];j++;
        }
-      // printf("z=%s\nd=%s\n",z,d);
-       //printf("s=%s x=%s\n",s,x);
     }
     if(ok==0)printf("-1\n");
     if(n!=0)lam();
@@ -47,6 +43,6 @@ void lam()
 }
 int main()
 {
-   // fi;fo;
+   
     lam();
 }
